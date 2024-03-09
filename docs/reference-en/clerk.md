@@ -6,8 +6,8 @@ Methods for executing multiple functions at different times with a single trigge
 
 | Method | Return Type | Brief Description |
 | --- | --- | --- |
-| [runOnceAfter](/reference/clerk?id=runonceafter) | Boolean | Execute a task every day after a specified time. |
-| [runOnceAWeek](/reference/clerk?id=runonceaweek) | Boolean | Execute a task on a specific day of the week. |
+| [runOnceAfter](/reference-en/clerk?id=runonceafter) | Boolean | Execute a task every day after a specified time. |
+| [runOnceAWeek](/reference-en/clerk?id=runonceaweek) | Boolean | Execute a task on a specific day of the week. |
 
 ## runOnceAfter
 
