@@ -22,16 +22,16 @@ For old accounts, it is equal to the login. For new accounts, a sequence of lett
 
 ## Description of Object Parameters
 
-The table describes the main keys of Spotify objects in a free translation. The original can be read [here](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/).
+The table describes the main keys of Spotify objects in a free translation. The original can be read [here](https://developer.spotify.com/documentation/web-api/reference-en/tracks/get-audio-features/).
 
 | Key | Range | Description |
 | --- | --- | --- |
 | `popularity` | 0 - 100 | Popularity of the track, artist or album. The closer to 100, the more popular it is.<br><ul><li>Track. Calculated based on total number of plays and how recent they are. A track with a large number of recent plays will be more popular than a track with a large number of old plays. The value may have a lag of several days, i.e., it does not update in real time.</li><li>Artist and album. Calculated based on the popularity of tracks.</li></ul> |
 | `duration_ms` | 0 - 0+ | Duration of the track in milliseconds ([calculator](https://www.google.ru/search?ie=UTF-8&q=%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D1%8B%20%D0%B2%20%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D1%8B%20%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80)). Useful for removing tracks with small duration by setting a minimum value. Or, conversely, large duration. |
-| `explicit` | boolean | Presence or absence of explicit language. In the case of the [rangeTracks](/reference/filter?id=rangetracks) function, the value `false` will remove tracks with explicit language. The value `true` or absence of this key will leave all tracks. |
+| `explicit` | boolean | Presence or absence of explicit language. In the case of the [rangeTracks](/reference-en/filter?id=rangetracks) function, the value `false` will remove tracks with explicit language. The value `true` or absence of this key will leave all tracks. |
 | `added_at` | string | Date added to playlist in string format. Example usage in template [favorite and forgotten](/template?id=Любимо-и-забыто). |
-| `genres` and `ban_genres` | array | Genres of the artist or album. Tests show that for albums, the list is always empty. In the case of the [rangeTracks](/reference/filter?id=rangetracks) function, only those tracks will be selected that have at least one genre from the `genres` array and do not have any from the `ban_genres` array. |
-| `release_date` | dates | Period when the album of the track was released in date format ([format described here](/reference/filter?id=rangedateabs)). For example, between 2018 and 2020 years: `{ min: new Date('2018'), max: new Date('2020') }` |
+| `genres` and `ban_genres` | array | Genres of the artist or album. Tests show that for albums, the list is always empty. In the case of the [rangeTracks](/reference-en/filter?id=rangetracks) function, only those tracks will be selected that have at least one genre from the `genres` array and do not have any from the `ban_genres` array. |
+| `release_date` | dates | Period when the album of the track was released in date format ([format described here](/reference-en/filter?id=rangedateabs)). For example, between 2018 and 2020 years: `{ min: new Date('2018'), max: new Date('2020') }` |
 
 ## Track Features (features) {docsify-ignore}
 | Key | Range | Description |
@@ -51,7 +51,7 @@ The table describes the main keys of Spotify objects in a free translation. The 
 
 ## Genres for Recommendations Selection
 
-This list is needed only for [getRecomTracks](/reference/source?id=getrecomtracks). In [rangeTracks](/reference/filter?id=rangetracks), you can use [such a list](http://everynoise.com/everynoise1d.cgi?scope=all).
+This list is needed only for [getRecomTracks](/reference-en/source?id=getrecomtracks). In [rangeTracks](/reference-en/filter?id=rangetracks), you can use [such a list](http://everynoise.com/everynoise1d.cgi?scope=all).
 
 ```
 a: acoustic, afrobeat, alt-rock, alternative, ambient, anime, 
