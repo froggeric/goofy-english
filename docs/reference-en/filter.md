@@ -6,24 +6,24 @@ Methods for filtering elements.
 
 | Method | Result Type | Short Description |
 | --- | --- | --- |
-| [dedupArtists](/reference/filter?id=dedupartists) | - | Remove duplicate artists. |
-| [dedupTracks](/reference/filter?id=deduptracks) | - | Remove duplicate tracks. |
-| [getDateRel](/reference/filter?id=getdaterel) | Date | Calculate the date by offset in days relative to today. |
-| [detectLanguage](/reference/filter?id=detectlanguage) | - | Determine the main language of track performance based on text. |
-| [getLastOutRange](/reference/filter?id=getlastoutrange) | Array | Find out which tracks did not pass the last filtering by [rangeTracks](/reference/filter?id=rangetracks) |
-| [match](/reference/filter?id=match) | - | Remove tracks that do not meet the regular expression. |
-| [matchExcept](/reference/filter?id=matchexcept) | - | Wrapper for [match](/reference/filter?id=match) with inversion. |
-| [matchExceptMix](/reference/filter?id=matchexceptmix) | - | Remove tracks containing the words _mix_ and _club_. |
-| [matchExceptRu](/reference/filter?id=matchexceptru) | - | Remove tracks that contain Cyrillic in the title. |
-| [matchLatinOnly](/reference/filter?id=matchlatinonly) | - | Remove all tracks except those containing Latin characters in the title. |
-| [matchOriginalOnly](/reference/filter?id=matchoriginalonly) | - | Remove non-original versions of tracks. |
-| [rangeDateAbs](/reference/filter?id=rangedateabs) | - | Select elements that fall within a period by absolute dates of addition or playback. |
-| [rangeDateRel](/reference/filter?id=rangedaterel) | - | Select elements that fall within a period by relative dates of addition or playback. |
-| [rangeTracks](/reference/filter?id=rangetracks) | - | Select tracks that fall within the range of metadata. |
-| [removeArtists](/reference/filter?id=removeartists) | - | Exclude artists from an array. |
-| [removeTracks](/reference/filter?id=removetracks) | - | Exclude tracks from an array. |
-| [removeUnavailable](/reference/filter?id=removeunavailable) | - | Exclude unplayable tracks. |
-| [replaceWithSimilar](/reference/filter?id=replacewithsimilar) | - | Replace tracks with similar ones. |
+| [dedupArtists](/reference-en/filter?id=dedupartists) | - | Remove duplicate artists. |
+| [dedupTracks](/reference-en/filter?id=deduptracks) | - | Remove duplicate tracks. |
+| [getDateRel](/reference-en/filter?id=getdaterel) | Date | Calculate the date by offset in days relative to today. |
+| [detectLanguage](/reference-en/filter?id=detectlanguage) | - | Determine the main language of track performance based on text. |
+| [getLastOutRange](/reference-en/filter?id=getlastoutrange) | Array | Find out which tracks did not pass the last filtering by [rangeTracks](/reference-en/filter?id=rangetracks) |
+| [match](/reference-en/filter?id=match) | - | Remove tracks that do not meet the regular expression. |
+| [matchExcept](/reference-en/filter?id=matchexcept) | - | Wrapper for [match](/reference-en/filter?id=match) with inversion. |
+| [matchExceptMix](/reference-en/filter?id=matchexceptmix) | - | Remove tracks containing the words _mix_ and _club_. |
+| [matchExceptRu](/reference-en/filter?id=matchexceptru) | - | Remove tracks that contain Cyrillic in the title. |
+| [matchLatinOnly](/reference-en/filter?id=matchlatinonly) | - | Remove all tracks except those containing Latin characters in the title. |
+| [matchOriginalOnly](/reference-en/filter?id=matchoriginalonly) | - | Remove non-original versions of tracks. |
+| [rangeDateAbs](/reference-en/filter?id=rangedateabs) | - | Select elements that fall within a period by absolute dates of addition or playback. |
+| [rangeDateRel](/reference-en/filter?id=rangedaterel) | - | Select elements that fall within a period by relative dates of addition or playback. |
+| [rangeTracks](/reference-en/filter?id=rangetracks) | - | Select tracks that fall within the range of metadata. |
+| [removeArtists](/reference-en/filter?id=removeartists) | - | Exclude artists from an array. |
+| [removeTracks](/reference-en/filter?id=removetracks) | - | Exclude tracks from an array. |
+| [removeUnavailable](/reference-en/filter?id=removeunavailable) | - | Exclude unplayable tracks. |
+| [replaceWithSimilar](/reference-en/filter?id=replacewithsimilar) | - | Replace tracks with similar ones. |
 
 ## dedupArtists
 
@@ -157,11 +157,11 @@ Filter.detectLanguage(tracks, { isRemoveUnknown: true });
 console.log(Array.from(new Set(tracks.map(t => t.lyrics.lang))).join('\n'));
 ```
 
-?> The [mineTracks](/reference/source?id=minetracks) search function is suitable for a set of tracks in different languages.
+?> The [mineTracks](/reference-en/source?id=minetracks) search function is suitable for a set of tracks in different languages.
 
 ## getLastOutRange
 
-Find tracks that did not pass the last filtering [rangeTracks](/reference/filter?id=rangetracks).
+Find tracks that did not pass the last filtering [rangeTracks](/reference-en/filter?id=rangetracks).
 
 ### Arguments :id=getlastoutrange-arguments {docsify-ignore}
 
@@ -210,7 +210,7 @@ Filter.match(tracks, 'cover|live', true);
 
 ## matchExcept
 
-Wrapper for [match](/reference/filter) with `invert = true`.
+Wrapper for [match](/reference-en/filter) with `invert = true`.
 
 ### Arguments :id=matchexcept-arguments {docsify-ignore}
 
@@ -234,7 +234,7 @@ Filter.matchExcept(tracks, 'cover|live');
 
 ## matchExceptMix
 
-Remove tracks containing the words _mix_ and _club_. Wrapper for [matchExcept](/reference/filter?id=matchexcept) with argument `strRegex = 'mix|club'`.
+Remove tracks containing the words _mix_ and _club_. Wrapper for [matchExcept](/reference-en/filter?id=matchexcept) with argument `strRegex = 'mix|club'`.
 
 ### Arguments :id=matchexceptmix-arguments {docsify-ignore}
 
@@ -257,9 +257,9 @@ Filter.matchExceptMix(tracks);
 
 ## matchExceptRu
 
-Remove tracks containing Cyrillic in the title. Wrapper for [matchExcept](/reference/filter?id=matchexcept) with argument `strRegex = '[а-яА-ЯёЁ]+'`.
+Remove tracks containing Cyrillic in the title. Wrapper for [matchExcept](/reference-en/filter?id=matchexcept) with argument `strRegex = '[а-яА-ЯёЁ]+'`.
 
-> For filtering by track language, use [detectLanguage](/reference/filter?id=detectlanguage).
+> For filtering by track language, use [detectLanguage](/reference-en/filter?id=detectlanguage).
 
 ### Arguments :id=matchexceptru-arguments {docsify-ignore}
 
@@ -282,9 +282,9 @@ Filter.matchExceptRu(tracks);
 
 ## matchLatinOnly
 
-Remove all tracks except those containing Latin characters in the title. Wrapper for [match](/reference/filter?id=match) with argument `strRegex = '^[a-zA-Z0-9 ]+$'`.
+Remove all tracks except those containing Latin characters in the title. Wrapper for [match](/reference-en/filter?id=match) with argument `strRegex = '^[a-zA-Z0-9 ]+$'`.
 
-> For filtering by track language, use [detectLanguage](/reference/filter?id=detectlanguage).
+> For filtering by track language, use [detectLanguage](/reference-en/filter?id=detectlanguage).
 
 ### Arguments :id=matchlatinonly-arguments {docsify-ignore}
 
@@ -307,7 +307,7 @@ Filter.matchLatinOnly(tracks);
 
 ## matchOriginalOnly
 
-Remove non-original versions of tracks. Wrapper for [matchExcept](/reference/filter?id=matchexcept) with argument `strRegex = 'mix|club|radio|piano|acoustic|edit|live|version|cover|karaoke'`.
+Remove non-original versions of tracks. Wrapper for [matchExcept](/reference-en/filter?id=matchexcept) with argument `strRegex = 'mix|club|radio|piano|acoustic|edit|live|version|cover|karaoke'`.
 
 ### Arguments :id=matchoriginalonly-arguments {docsify-ignore}
 
@@ -332,7 +332,7 @@ Filter.matchOriginalOnly(tracks);
 
 Select elements that fall within a period by absolute dates. The date of addition or playback is checked.
 
-> For filtering by album release date, use [rangeTracks](/reference/filter?id=rangetracks).
+> For filtering by album release date, use [rangeTracks](/reference-en/filter?id=rangetracks).
 
 ### Arguments :id=rangedateabs-arguments {docsify-ignore}
 
@@ -384,7 +384,7 @@ Filter.rangeDateAbs(tracks, startDate, endDate);
 
 Select elements that fall within a period by relative dates. The date of addition or playback is checked.
 
-> If an element does not contain a date, it is set to 01.01.2000. This may happen if the track was added to Spotify a long time ago and the source is [getTopTracks](/reference/source?id=gettoptracks), or this is playlists such as "My Mix of the Day #N" or several other sources.
+> If an element does not contain a date, it is set to 01.01.2000. This may happen if the track was added to Spotify a long time ago and the source is [getTopTracks](/reference-en/source?id=gettoptracks), or this is playlists such as "My Mix of the Day #N" or several other sources.
 
 ### Arguments :id=rangedaterel-arguments {docsify-ignore}
 
@@ -446,11 +446,11 @@ Select tracks that fall within the metadata range.
 | `tracks` | Array | Tracks to check. |
 | `params` | Object | Selection parameters. |
 
-> The function requests additional data. To reduce the number of requests, use it after reducing the array of tracks by other means (e.g., [rangeDateRel](/reference/filter?id=rangedaterel), [match](/reference/filter?id=match) and others). Obtained data is cached for **current** execution. Repeated function calls or sorting with the same categories using [sort](/reference/order?id=sort) do not send new requests.
+> The function requests additional data. To reduce the number of requests, use it after reducing the array of tracks by other means (e.g., [rangeDateRel](/reference-en/filter?id=rangedaterel), [match](/reference-en/filter?id=match) and others). Obtained data is cached for **current** execution. Repeated function calls or sorting with the same categories using [sort](/reference-en/order?id=sort) do not send new requests.
 
 #### Selection Parameters :id=rangetracks-params {docsify-ignore}
 
-Below is an example of a `params` object with all possible conditions for checking. [Parameter description](/reference/desc?id=Описание-параметров-объектов).
+Below is an example of a `params` object with all possible conditions for checking. [Parameter description](/reference-en/desc?id=Описание-параметров-объектов).
 
 ```js
 let params = {
@@ -602,7 +602,7 @@ Filter.removeTracks(sourceArray, removedArray);
 
 Exclude unplayable tracks. Does not replace the original with an analogue. That is, there is no redirection to another track, more details in [the relink problem](https://github.com/Chimildic/goofy/discussions/99). Makes additional requests (1 for 50 tracks) if a track is in an undefined state.
 
-> It's acceptable to apply the filter to tracks from `Cache`, passed through the [compressTracks](/reference/cache?id=compresstracks) method. If the method was not applied, the state is determined by the value in the cached track.
+> It's acceptable to apply the filter to tracks from `Cache`, passed through the [compressTracks](/reference-en/cache?id=compresstracks) method. If the method was not applied, the state is determined by the value in the cached track.
 
 ### Arguments :id=removeunavailable-arguments {docsify-ignore}
 
@@ -626,7 +626,7 @@ Filter.removeUnavailable(tracks, 'RU');
 
 ## replaceWithSimilar
 
-Replace tracks with similar ones. For one replacement N random tracks are taken from the results of [getRecomTracks](/reference/source?id=getrecomtracks). Recommendations are requested with `target_*` parameters from the original track. When replacements are not available, the track is deleted.
+Replace tracks with similar ones. For one replacement N random tracks are taken from the results of [getRecomTracks](/reference-en/source?id=getrecomtracks). Recommendations are requested with `target_*` parameters from the original track. When replacements are not available, the track is deleted.
 
 ### Arguments :id=replacewithsimilar-arguments {docsify-ignore}
 
