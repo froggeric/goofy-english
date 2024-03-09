@@ -4,10 +4,10 @@ Methods for combining elements.
 
 | Method | Result Type | Brief Description |
 | --- | --- | --- |
-| [alternate](/reference/combiner?id=alternate) | Array | Alternating elements of arrays. One step - one element of the array. |
-| [mixin](/reference/combiner?id=mixin) | Array | Alternating elements of two arrays. One step - one or more elements from one array. |
-| [mixinMulti](/reference/combiner?id=mixinmulti) | Array | Alternating elements of an unlimited number of arrays. One step - one or more elements from one array. |
-| [push](/reference/combiner?id=push) | Array | Adding the elements of the second array to the end of the first array and so on. |
+| [alternate](/reference-en/combiner?id=alternate) | Array | Alternating elements of arrays. One step - one element of the array. |
+| [mixin](/reference-en/combiner?id=mixin) | Array | Alternating elements of two arrays. One step - one or more elements from one array. |
+| [mixinMulti](/reference-en/combiner?id=mixinmulti) | Array | Alternating elements of an unlimited number of arrays. One step - one or more elements from one array. |
+| [push](/reference-en/combiner?id=push) | Array | Adding the elements of the second array to the end of the first array and so on. |
 
 ## alternate
 
@@ -47,7 +47,7 @@ let resultArray = Combiner.alternate('min', topTracks, savedTracks);
 
 ## mixin
 
-Alternating elements of two arrays. One step - one or more elements from one array. Includes a call to [mixinMulti](/reference/combiner?id=mixinmulti).
+Alternating elements of two arrays. One step - one or more elements from one array. Includes a call to [mixinMulti](/reference-en/combiner?id=mixinmulti).
 
 ### Arguments :id=mixin-arguments
 
