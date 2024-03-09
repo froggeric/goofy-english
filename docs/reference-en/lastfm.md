@@ -8,28 +8,28 @@ Methods for interacting with Last.fm.
 
 | Method | Result Type | Brief Description |
 | --- | --- | --- |
-| [convertToSpotify](/reference/lastfm?id=converttospotify) | Array | Find Spotify elements by Last.fm data. |
-| [getAlbumsByTag](/reference/lastfm?id=getalbumsbytag) | Array | Get albums by tag. |
-| [getArtistsByTag](/reference/lastfm?id=getartistsbytag) | Array | Get artists by tag. |
-| [getCustomTop](/reference/lastfm?id=getcustomtop) | Array | Get a custom top from the user. |
-| [getLibraryStation](/reference/lastfm?id=getlibrarystation) | Array | Get tracks from the _library_ radio station. |
-| [getLovedTracks](/reference/lastfm?id=getlovedtracks) | Array | Get Last.fm likes. |
-| [getMixStation](/reference/lastfm?id=getmixstation) | Array | Get tracks from the _mix_ radio station. |
-| [getNeighboursStation](/reference/lastfm?id=getneighboursstation) | Array | Get tracks from the _neighbors_ radio station. |
-| [getRecentTracks](/reference/lastfm?id=getrecenttracks) | Array | Get a user's Last.fm listening history. |
-| [getRecomStation](/reference/lastfm?id=getrecomstation) | Array | Get tracks from the _recommendations_ radio station. |
-| [getSimilarArtists](/reference/lastfm?id=getsimilarartists) | Array | Get similar artists. |
-| [getSimilarTracks](/reference/lastfm?id=getsimilartracks) | Array | Get similar tracks. |
-| [getTopAlbums](/reference/lastfm?id=gettopalbums) | Array | Get a user's top albums. |
-| [getTopAlbumsByTag](/reference/lastfm?id=gettopalbumsbytag) | Array | Get top albums by tag. |
-| [getTopArtists](/reference/lastfm?id=gettopartists) | Array | Get a user's top artists. |
-| [getTopArtistsByTag](/reference/lastfm?id=getTopArtistsByTag) | Array | Get top artists by tag. |
-| [getTopTracks](/reference/lastfm?id=gettoptracks) | Array | Get a user's top tracks. |
-| [getTopTracksByTag](/reference/lastfm?id=gettoptracksbytag) | Array | Get top tracks by tag. |
-| [getTracksByTag](/reference/lastfm?id=gettracksbytag) | Array | Get tracks by tag. |
-| [rangeTags](/reference/lastfm?id=rangetags) | - | Select tracks by tags. |
-| [removeRecentArtists](/reference/lastfm?id=removerecentartists) | - | Remove artists from Last.fm listening history data. |
-| [removeRecentTracks](/reference/lastfm?id=removerecenttracks) | - | Remove tracks from Last.fm listening history data. |
+| [convertToSpotify](/reference-en/lastfm?id=converttospotify) | Array | Find Spotify elements by Last.fm data. |
+| [getAlbumsByTag](/reference-en/lastfm?id=getalbumsbytag) | Array | Get albums by tag. |
+| [getArtistsByTag](/reference-en/lastfm?id=getartistsbytag) | Array | Get artists by tag. |
+| [getCustomTop](/reference-en/lastfm?id=getcustomtop) | Array | Get a custom top from the user. |
+| [getLibraryStation](/reference-en/lastfm?id=getlibrarystation) | Array | Get tracks from the _library_ radio station. |
+| [getLovedTracks](/reference-en/lastfm?id=getlovedtracks) | Array | Get Last.fm likes. |
+| [getMixStation](/reference-en/lastfm?id=getmixstation) | Array | Get tracks from the _mix_ radio station. |
+| [getNeighboursStation](/reference-en/lastfm?id=getneighboursstation) | Array | Get tracks from the _neighbors_ radio station. |
+| [getRecentTracks](/reference-en/lastfm?id=getrecenttracks) | Array | Get a user's Last.fm listening history. |
+| [getRecomStation](/reference-en/lastfm?id=getrecomstation) | Array | Get tracks from the _recommendations_ radio station. |
+| [getSimilarArtists](/reference-en/lastfm?id=getsimilarartists) | Array | Get similar artists. |
+| [getSimilarTracks](/reference-en/lastfm?id=getsimilartracks) | Array | Get similar tracks. |
+| [getTopAlbums](/reference-en/lastfm?id=gettopalbums) | Array | Get a user's top albums. |
+| [getTopAlbumsByTag](/reference-en/lastfm?id=gettopalbumsbytag) | Array | Get top albums by tag. |
+| [getTopArtists](/reference-en/lastfm?id=gettopartists) | Array | Get a user's top artists. |
+| [getTopArtistsByTag](/reference-en/lastfm?id=getTopArtistsByTag) | Array | Get top artists by tag. |
+| [getTopTracks](/reference-en/lastfm?id=gettoptracks) | Array | Get a user's top tracks. |
+| [getTopTracksByTag](/reference-en/lastfm?id=gettoptracksbytag) | Array | Get top tracks by tag. |
+| [getTracksByTag](/reference-en/lastfm?id=gettracksbytag) | Array | Get tracks by tag. |
+| [rangeTags](/reference-en/lastfm?id=rangetags) | - | Select tracks by tags. |
+| [removeRecentArtists](/reference-en/lastfm?id=removerecentartists) | - | Remove artists from Last.fm listening history data. |
+| [removeRecentTracks](/reference-en/lastfm?id=removerecenttracks) | - | Remove tracks from Last.fm listening history data. |
 
 ## convertToSpotify
 
@@ -39,7 +39,7 @@ Find Spotify elements by Last.fm data.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `items` | String | Elements in Last.fm format. For example, obtained from [getCustomTop](/reference/lastfm?id=getcustomtop) with `isRawItems = true`. |
+| `items` | String | Elements in Last.fm format. For example, obtained from [getCustomTop](/reference-en/lastfm?id=getcustomtop) with `isRawItems = true`. |
 | `type` | String | Search type: `track`, `artist`, or `album`. Default is `track`. |
 
 ### Return :id=converttospotify-return {docsify-ignore}
@@ -116,7 +116,7 @@ Get a custom top from the user.
 | `offset` | Number | Skip the first N elements. Default is 0. |
 | `minPlayed` | Number | Minimum number of plays, inclusive. Default is 0. |
 | `maxPlayed` | Number | Maximum number of plays, inclusive. Default is 100 thousand. |
-| `isRawItems` | Boolean | When not specified or `false`, search for the element by name in Spotify. If `true`, the result from lastfm-elements. Ignores `count` and `offset`. May be needed for independent filtering. Then use the [convertToSpotify](/reference/lastfm?id=converttospotify) function. |
+| `isRawItems` | Boolean | When not specified or `false`, search for the element by name in Spotify. If `true`, the result from lastfm-elements. Ignores `count` and `offset`. May be needed for independent filtering. Then use the [convertToSpotify](/reference-en/lastfm?id=converttospotify) function. |
 
 ### Return :id=getcustomtop-return {docsify-ignore}
 
@@ -148,7 +148,7 @@ let topArtists = Lastfm.getCustomTop({
 
 ## getLibraryStation
 
-Get tracks from the _library_ radio station on Last.fm. Contains only scrobbled tracks. Note the warning in [getRecentTracks](/reference/lastfm?id=getrecenttracks).
+Get tracks from the _library_ radio station on Last.fm. Contains only scrobbled tracks. Note the warning in [getRecentTracks](/reference-en/lastfm?id=getrecenttracks).
 
 ### Arguments :id=getlibrarystation-arguments {docsify-ignore}
 
@@ -171,7 +171,7 @@ let tracks = Lastfm.getLibraryStation('login', 2);
 
 ## getLovedTracks
 
-Get Last.fm likes. Note the warning in [getRecentTracks](/reference/lastfm?id=getrecenttracks). Includes the date added, which can be used for filtering by date.
+Get Last.fm likes. Note the warning in [getRecentTracks](/reference-en/lastfm?id=getrecenttracks). Includes the date added, which can be used for filtering by date.
 
 ### Arguments :id=getlovedtracks-arguments {docsify-ignore}
 
@@ -194,7 +194,7 @@ let tracks = Lastfm.getLovedTracks('login', 200);
 
 ## getMixStation
 
-Get tracks from the _mix_ radio station on Last.fm. Contains scrobbled tracks and Last.fm recommendations. Note the warning in [getRecentTracks](/reference/lastfm?id=getrecenttracks).
+Get tracks from the _mix_ radio station on Last.fm. Contains scrobbled tracks and Last.fm recommendations. Note the warning in [getRecentTracks](/reference-en/lastfm?id=getrecenttracks).
 
 ### Arguments :id=getmixstation-arguments {docsify-ignore}
 
@@ -217,7 +217,7 @@ let tracks = Lastfm.getMixStation('login', 2);
 
 ## getNeighboursStation
 
-Get tracks from the _neighbors_ radio station on Last.fm. Contains tracks that users with similar musical tastes listen to on Last.fm. Note the warning in [getRecentTracks](/reference/lastfm?id=getrecenttracks).
+Get tracks from the _neighbors_ radio station on Last.fm. Contains tracks that users with similar musical tastes listen to on Last.fm. Note the warning in [getRecentTracks](/reference-en/lastfm?id=getrecenttracks).
 
 ### Arguments :id=getneighboursstation-arguments {docsify-ignore}
 
@@ -263,7 +263,7 @@ let tracks = Lastfm.getRecentTracks('login', 200);
 
 ## getRecomStation
 
-Get tracks from the _recommendations_ radio station on Last.fm. Note the warning in [getRecentTracks](/reference/lastfm?id=getrecenttracks).
+Get tracks from the _recommendations_ radio station on Last.fm. Note the warning in [getRecentTracks](/reference-en/lastfm?id=getrecenttracks).
 
 ### Arguments :id=getrecomstation-arguments {docsify-ignore}
 
@@ -344,7 +344,7 @@ Get a user's top albums.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | Object | Selection parameters. Similar to the parameters for [getTopTracks](/reference/lastfm?id=gettoptracks). |
+| `params` | Object | Selection parameters. Similar to the parameters for [getTopTracks](/reference-en/lastfm?id=gettoptracks). |
 
 ### Return :id=gettopalbums-return {docsify-ignore}
 
@@ -403,7 +403,7 @@ Get a user's top artists.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | Object | Selection parameters. Similar to the parameters for [getTopTracks](/reference/lastfm?id=gettoptracks). |
+| `params` | Object | Selection parameters. Similar to the parameters for [getTopTracks](/reference-en/lastfm?id=gettoptracks). |
 
 ### Return :id=gettopartists-return {docsify-ignore}
 
@@ -429,7 +429,7 @@ Get top artists by tag.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | Object | Selection parameters. Similar to the parameters for [getTopAlbumsByTag](/reference/lastfm?id=gettopalbumsbytag). |
+| `params` | Object | Selection parameters. Similar to the parameters for [getTopAlbumsByTag](/reference-en/lastfm?id=gettopalbumsbytag). |
 
 ### Return :id=gettopartistsbytag-return {docsify-ignore}
 
@@ -489,7 +489,7 @@ Get top tracks by tag.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `params` | Object | Selection parameters. Similar to the parameters for [getTopAlbumsByTag](/reference/lastfm?id=gettopalbumsbytag). |
+| `params` | Object | Selection parameters. Similar to the parameters for [getTopAlbumsByTag](/reference-en/lastfm?id=gettopalbumsbytag). |
 
 ### Return :id=gettoptracksbytag-return {docsify-ignore}
 
