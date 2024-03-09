@@ -8,14 +8,14 @@ By default, without specifying a file extension, `json` is assumed. Text format 
 
 | Method | Result Type | Short Description |
 | --- | --- | --- |
-| [append](/reference/cache?id=append) | Number | Append data to an array from a file. |
-| [compressArtists](/reference/cache?id=compressartists) | - | Remove insignificant artist data. |
-| [compressTracks](/reference/cache?id=compresstracks) | - | Remove insignificant track data. |
-| [copy](/reference/cache?id=copy) | String | Create a copy of the file in the source folder. |
-| [read](/reference/cache?id=read) | Array/Object/String | Read data from a file. |
-| [remove](/reference/cache?id=remove) | - | Move the file to the Google Drive trash. |
-| [rename](/reference/cache?id=rename) | - | Rename the file. |
-| [write](/reference/cache?id=write) | - | Write data to a file. |
+| [append](/reference-en/cache?id=append) | Number | Append data to an array from a file. |
+| [compressArtists](/reference-en/cache?id=compressartists) | - | Remove insignificant artist data. |
+| [compressTracks](/reference-en/cache?id=compresstracks) | - | Remove insignificant track data. |
+| [copy](/reference-en/cache?id=copy) | String | Create a copy of the file in the source folder. |
+| [read](/reference-en/cache?id=read) | Array/Object/String | Read data from a file. |
+| [remove](/reference-en/cache?id=remove) | - | Move the file to the Google Drive trash. |
+| [rename](/reference-en/cache?id=rename) | - | Rename the file. |
+| [write](/reference-en/cache?id=write) | - | Write data to a file. |
 
 ## append
 
@@ -77,7 +77,7 @@ Cache.write(filename, artists);
 
 ## compressTracks
 
-Remove insignificant track data. Use before saving to a file to reduce its size. Includes the [compressArtists](/reference/cache?id=compressartists) call.
+Remove insignificant track data. Use before saving to a file to reduce its size. Includes the [compressArtists](/reference-en/cache?id=compressartists) call.
 
 ### Arguments :id=compresstracks-arguments {docsify-ignore}
 
