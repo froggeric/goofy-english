@@ -4,9 +4,9 @@ Methods for working with the playback history.
 
 | Method | Result Type | Brief Description |
 | --- | --- | --- |
-| [appendTracks](/reference/filter?id=appendtracks) | - | Add an array of tracks to the playback history file. |
-| [compress](/reference/filter?id=compress) | - | Delete insignificant data about tracks in accumulative files of the playback history. |
-| [get](/reference/filter?id=get) | Array | Get the tracks from the playback history. |
+| [appendTracks](/reference-en/filter?id=appendtracks) | - | Add an array of tracks to the playback history file. |
+| [compress](/reference-en/filter?id=compress) | - | Delete insignificant data about tracks in accumulative files of the playback history. |
+| [get](/reference-en/filter?id=get) | Array | Get the tracks from the playback history. |
 
 ## appendTracks
 
